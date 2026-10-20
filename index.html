@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elif & Kaan — Düğün Davetiyesi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= SABİT ARKA PLAN YILDIZLARI (PARALLAX) ================= -->
+<div class="star-field" id="starField" aria-hidden="true">
+  <svg class="star-layer star-layer-far" viewBox="0 0 640 1000" preserveAspectRatio="xMidYMid slice">
+    <circle cx="289.5" cy="559.8" r="1.2"/><circle cx="298.0" cy="507.8" r="0.8"/><circle cx="118.2" cy="511.9" r="1.0"/><circle cx="507.5" cy="94.1" r="0.8"/>
+        <circle cx="58.0" cy="809.6" r="1.0"/><circle cx="26.8" cy="982.2" r="1.2"/><circle cx="418.5" cy="615.6" r="0.6"/><circle cx="9.6" cy="528.4" r="0.6"/>
+        <circle cx="121.7" cy="241.9" r="0.6"/><circle cx="296.9" cy="440.5" r="1.0"/><circle cx="332.2" cy="640.3" r="0.8"/><circle cx="424.0" cy="457.3" r="0.6"/>
+        <circle cx="638.5" cy="995.7" r="1.0"/><circle cx="453.0" cy="315.3" r="0.6"/><circle cx="185.0" cy="70.2" r="1.0"/><circle cx="256.3" cy="846.6" r="0.8"/>
+        <circle cx="613.1" cy="847.3" r="0.6"/><circle cx="134.2" cy="910.3" r="0.8"/><circle cx="627.4" cy="397.4" r="0.6"/><circle cx="402.9" cy="778.5" r="0.6"/>
+        <circle cx="55.8" cy="332.6" r="1.2"/><circle cx="485.1" cy="118.0" r="0.6"/><circle cx="64.7" cy="59.9" r="1.0"/><circle cx="113.7" cy="559.3" r="0.8"/>
+        <circle cx="122.0" cy="731.9" r="0.6"/><circle cx="412.0" cy="116.5" r="0.8"/><circle cx="136.2" cy="269.8" r="1.2"/><circle cx="514.2" cy="304.1" r="1.2"/>
+        <circle cx="134.9" cy="394.3" r="1.2"/><circle cx="410.8" cy="100.3" r="1.2"/><circle cx="136.5" cy="258.3" r="1.0"/><circle cx="210.5" cy="296.3" r="0.6"/>
+        <circle cx="57.7" cy="582.7" r="0.6"/><circle cx="384.8" cy="371.7" r="0.8"/><circle cx="613.8" cy="483.7" r="0.8"/><circle cx="554.6" cy="182.8" r="0.6"/>
+        <circle cx="581.4" cy="817.8" r="0.6"/><circle cx="121.5" cy="739.4" r="1.2"/><circle cx="125.8" cy="950.1" r="1.2"/><circle cx="386.3" cy="421.5" r="0.6"/>
+        <circle cx="24.8" cy="962.7" r="0.6"/><circle cx="450.9" cy="257.0" r="1.0"/><circle cx="381.7" cy="293.4" r="0.6"/><circle cx="461.0" cy="68.8" r="0.6"/>
+        <circle cx="358.0" cy="852.4" r="1.0"/><circle cx="179.3" cy="917.4" r="0.6"/><circle cx="10.6" cy="269.2" r="0.8"/><circle cx="38.7" cy="176.3" r="0.8"/>
+        <circle cx="366.2" cy="131.6" r="0.8"/><circle cx="570.2" cy="980.5" r="1.0"/><circle cx="442.4" cy="584.4" r="0.6"/><circle cx="22.5" cy="17.9" r="1.2"/>
+        <circle cx="448.6" cy="962.8" r="0.6"/><circle cx="407.2" cy="482.2" r="1.0"/><circle cx="204.1" cy="999.4" r="0.6"/><circle cx="349.5" cy="737.0" r="1.2"/>
+        <circle cx="471.7" cy="703.7" r="1.0"/><circle cx="585.6" cy="351.8" r="1.0"/><circle cx="576.5" cy="871.1" r="0.8"/><circle cx="505.9" cy="863.5" r="0.8"/>
+        <circle cx="400.0" cy="382.3" r="0.8"/><circle cx="389.7" cy="80.2" r="1.0"/><circle cx="635.7" cy="879.8" r="1.0"/><circle cx="248.6" cy="735.0" r="0.8"/>
+        <circle cx="281.9" cy="838.4" r="0.6"/><circle cx="480.1" cy="29.8" r="1.0"/><circle cx="307.8" cy="230.2" r="1.0"/><circle cx="318.2" cy="614.5" r="1.2"/>
+        <circle cx="163.7" cy="11.3" r="0.8"/><circle cx="434.0" cy="202.6" r="0.6"/>
+  </svg>
+  <svg class="star-layer star-layer-near" viewBox="0 0 640 1000" preserveAspectRatio="xMidYMid slice">
+    <circle cx="613.3" cy="140.4" r="1.2"/><circle cx="639.1" cy="184.3" r="1.2"/><circle cx="416.9" cy="345.6" r="2.4" class="star-big"/><circle cx="148.3" cy="959.5" r="1.6"/>
+        <circle cx="384.7" cy="932.1" r="2.0" class="star-big"/><circle cx="591.3" cy="708.1" r="1.2"/><circle cx="564.1" cy="589.6" r="1.6"/><circle cx="121.7" cy="849.8" r="2.0" class="star-big"/>
+        <circle cx="600.3" cy="774.0" r="2.8" class="star-big"/><circle cx="362.4" cy="698.4" r="2.0" class="star-big"/><circle cx="165.4" cy="956.7" r="1.6"/><circle cx="499.9" cy="954.6" r="2.0" class="star-big"/>
+        <circle cx="91.0" cy="825.2" r="2.0" class="star-big"/><circle cx="118.4" cy="49.1" r="2.0" class="star-big"/><circle cx="20.6" cy="925.1" r="2.0" class="star-big"/><circle cx="331.1" cy="409.4" r="2.0" class="star-big"/>
+        <circle cx="586.5" cy="307.3" r="1.6"/><circle cx="372.9" cy="297.3" r="2.0" class="star-big"/><circle cx="347.6" cy="433.5" r="2.0" class="star-big"/><circle cx="338.1" cy="88.1" r="2.8" class="star-big"/>
+        <circle cx="227.6" cy="431.8" r="1.6"/><circle cx="594.9" cy="952.2" r="2.0" class="star-big"/><circle cx="256.4" cy="96.6" r="2.4" class="star-big"/><circle cx="109.7" cy="546.6" r="1.6"/>
+        <circle cx="210.1" cy="357.2" r="1.2"/><circle cx="23.7" cy="535.5" r="2.4" class="star-big"/><circle cx="414.1" cy="201.5" r="2.0" class="star-big"/><circle cx="33.3" cy="410.7" r="2.4" class="star-big"/>
+        <circle cx="589.4" cy="460.6" r="2.4" class="star-big"/><circle cx="319.1" cy="524.0" r="2.0" class="star-big"/>
+  </svg>
+</div>
+
+<!-- ================= KAPAK / AÇILIŞ EKRANI ================= -->
+<div class="cover" id="cover">
+  <svg class="stars" viewBox="0 0 640 900" preserveAspectRatio="xMidYMid slice">
+    <circle cx="93.3" cy="755.7" r="1.8" class="star-big"/><circle cx="168.1" cy="446.0" r="1.3"/><circle cx="414.0" cy="704.1" r="0.9"/><circle cx="27.6" cy="745.5" r="1.3"/>
+      <circle cx="482.6" cy="11.9" r="1.3"/><circle cx="457.4" cy="211.3" r="2.1" class="star-big"/><circle cx="568.9" cy="36.9" r="0.9"/><circle cx="345.7" cy="836.5" r="1.3"/>
+      <circle cx="144.3" cy="381.5" r="0.9"/><circle cx="147.4" cy="395.3" r="1.3"/><circle cx="154.5" cy="213.2" r="1.1"/><circle cx="295.0" cy="265.0" r="0.9"/>
+      <circle cx="529.3" cy="499.7" r="1.5"/><circle cx="125.3" cy="883.4" r="1.8" class="star-big"/><circle cx="85.0" cy="302.8" r="1.5"/><circle cx="450.9" cy="834.1" r="1.3"/>
+      <circle cx="524.6" cy="599.9" r="1.3"/><circle cx="374.3" cy="786.6" r="1.8" class="star-big"/><circle cx="323.3" cy="528.3" r="0.9"/><circle cx="160.5" cy="711.7" r="1.3"/>
+      <circle cx="117.3" cy="492.9" r="1.5"/><circle cx="428.2" cy="339.7" r="1.3"/><circle cx="325.2" cy="695.0" r="1.3"/><circle cx="253.8" cy="440.9" r="0.9"/>
+      <circle cx="37.0" cy="629.0" r="2.5" class="star-big"/><circle cx="377.8" cy="356.4" r="1.1"/><circle cx="321.4" cy="874.2" r="1.8" class="star-big"/><circle cx="344.6" cy="767.1" r="1.1"/>
+      <circle cx="328.5" cy="848.2" r="1.5"/><circle cx="294.7" cy="247.0" r="1.3"/><circle cx="603.4" cy="15.0" r="1.8" class="star-big"/><circle cx="518.7" cy="789.8" r="1.5"/>
+      <circle cx="511.7" cy="466.4" r="1.5"/><circle cx="274.2" cy="59.4" r="1.8" class="star-big"/><circle cx="363.4" cy="185.9" r="1.3"/><circle cx="310.7" cy="324.0" r="1.3"/>
+      <circle cx="343.9" cy="558.7" r="1.5"/><circle cx="294.1" cy="34.6" r="1.1"/><circle cx="119.9" cy="524.3" r="1.8" class="star-big"/><circle cx="505.0" cy="711.4" r="1.8" class="star-big"/>
+      <circle cx="168.3" cy="750.7" r="1.5"/><circle cx="61.6" cy="24.7" r="0.9"/><circle cx="478.5" cy="229.6" r="1.1"/><circle cx="397.4" cy="313.1" r="0.9"/>
+      <circle cx="109.0" cy="474.1" r="1.1"/><circle cx="179.2" cy="636.2" r="1.3"/><circle cx="209.6" cy="426.9" r="0.9"/><circle cx="249.7" cy="380.4" r="1.1"/>
+      <circle cx="77.4" cy="801.8" r="1.3"/><circle cx="139.6" cy="543.0" r="1.8" class="star-big"/><circle cx="22.9" cy="25.7" r="1.1"/><circle cx="455.7" cy="151.0" r="1.5"/>
+      <circle cx="430.5" cy="489.3" r="1.1"/><circle cx="614.9" cy="712.1" r="1.3"/><circle cx="148.4" cy="580.7" r="1.3"/>
+  </svg>
+
+  <div class="envelope" id="envelope">
+    <svg viewBox="0 0 220 150" class="envelope-svg">
+      <rect x="6" y="26" width="208" height="118" class="env-body"/>
+      <polyline points="6,26 110,96 214,26" class="env-flap-back"/>
+      <polygon points="6,26 110,96 214,26" class="env-flap"/>
+      <text x="110" y="104" text-anchor="middle" class="env-seal">E&amp;K</text>
+    </svg>
+  </div>
+
+  <div class="cover-text">
+    <div class="eyebrow">Bir Davetiniz Var</div>
+    <div class="cover-names script">Elif &amp; Kaan</div>
+    <button class="cover-btn" id="openInvite">Davetiyeyi Aç</button>
+  </div>
+</div>
+
+<!-- ================= MÜZİK OYNATICI ================= -->
+<div class="music-player" id="musicPlayer">
+  <audio id="bgMusic" loop preload="none">
+    <!-- Kendi müzik dosyanızın yolunu buraya yazın, örn: "music/song.mp3" -->
+  <source src="music/music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" aria-label="Müziği aç/kapat" title="Müziği aç/kapat">
+    <svg viewBox="0 0 24 24" class="icon-note">
+      <path d="M9 18V5l12-2v13"/>
+      <circle cx="6" cy="18" r="3"/>
+      <circle cx="18" cy="16" r="3"/>
+    </svg>
+  </button>
+</div>
+
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="stars" viewBox="0 0 640 900" preserveAspectRatio="xMidYMid slice">
+      <circle cx="602.7" cy="844.1" r="0.9"/><circle cx="62.6" cy="745.2" r="1.5"/><circle cx="425.2" cy="281.2" r="1.5"/><circle cx="386.2" cy="521.5" r="1.1"/>
+      <circle cx="277.0" cy="356.3" r="1.5"/><circle cx="626.8" cy="845.5" r="1.3"/><circle cx="285.8" cy="246.1" r="0.9"/><circle cx="27.0" cy="419.1" r="1.3"/>
+      <circle cx="245.6" cy="794.8" r="1.3"/><circle cx="357.5" cy="217.8" r="0.9"/><circle cx="211.6" cy="130.3" r="1.3"/><circle cx="629.2" cy="603.5" r="1.1"/>
+      <circle cx="564.0" cy="711.1" r="1.5"/><circle cx="572.1" cy="681.3" r="1.8" class="star-big"/><circle cx="229.3" cy="873.3" r="2.5" class="star-big"/><circle cx="109.9" cy="673.5" r="1.5"/>
+      <circle cx="296.1" cy="476.7" r="1.3"/><circle cx="583.4" cy="450.7" r="1.8" class="star-big"/><circle cx="229.4" cy="786.9" r="2.1" class="star-big"/><circle cx="295.8" cy="509.6" r="2.1" class="star-big"/>
+      <circle cx="458.7" cy="438.2" r="1.1"/><circle cx="211.3" cy="625.6" r="1.1"/><circle cx="572.9" cy="246.0" r="2.1" class="star-big"/><circle cx="201.9" cy="852.5" r="1.5"/>
+      <circle cx="322.6" cy="465.6" r="1.5"/><circle cx="374.5" cy="284.4" r="1.1"/><circle cx="327.4" cy="832.1" r="1.5"/><circle cx="56.7" cy="732.0" r="1.5"/>
+      <circle cx="572.7" cy="178.4" r="1.5"/><circle cx="46.4" cy="584.6" r="1.1"/><circle cx="150.5" cy="780.4" r="1.1"/><circle cx="333.9" cy="761.5" r="1.1"/>
+      <circle cx="140.5" cy="784.9" r="1.3"/><circle cx="454.5" cy="38.0" r="1.3"/><circle cx="116.6" cy="602.0" r="0.9"/><circle cx="601.8" cy="32.3" r="1.5"/>
+      <circle cx="23.1" cy="235.0" r="1.8" class="star-big"/><circle cx="107.4" cy="171.7" r="1.5"/><circle cx="249.1" cy="48.0" r="2.5" class="star-big"/><circle cx="103.9" cy="41.9" r="1.3"/>
+      <circle cx="391.4" cy="663.4" r="1.1"/><circle cx="219.1" cy="37.1" r="1.3"/><circle cx="484.9" cy="661.2" r="2.1" class="star-big"/><circle cx="478.5" cy="769.0" r="1.5"/>
+      <circle cx="303.1" cy="208.5" r="1.5"/><circle cx="206.1" cy="99.8" r="1.3"/><circle cx="552.4" cy="122.2" r="1.5"/><circle cx="253.6" cy="463.0" r="1.1"/>
+      <circle cx="605.0" cy="238.0" r="1.5"/><circle cx="270.2" cy="25.9" r="1.5"/><circle cx="97.2" cy="60.0" r="0.9"/><circle cx="109.9" cy="94.4" r="1.5"/>
+      <circle cx="325.1" cy="875.5" r="2.1" class="star-big"/><circle cx="626.6" cy="214.6" r="1.3"/><circle cx="165.5" cy="530.3" r="1.5"/>
+    </svg>
+    <div class="hero-inner">
+      <div class="constellation reveal" data-delay="0">
+        <svg viewBox="0 0 200 170" class="constellation-svg">
+          <path class="constellation-line" d="M 93.7 46.4 L 103.7 25.2 L 145.5 14.0 L 173.4 51.4 L 145.5 98.7 L 103.7 137.4 L 93.7 156.0 L 83.8 137.4 L 41.9 98.7 L 14.0 51.4 L 41.9 14.0 L 83.8 25.2 Z"/>
+          <circle class="constellation-star star-big" cx="93.7" cy="46.4" r="2.2" style="animation-delay:0.0s, 2.8s"/>
+          <circle class="constellation-star" cx="103.7" cy="25.2" r="2.2" style="animation-delay:0.12s, 2.92s"/>
+          <circle class="constellation-star" cx="145.5" cy="14.0" r="2.2" style="animation-delay:0.35s, 3.15s"/>
+          <circle class="constellation-star" cx="173.4" cy="51.4" r="2.2" style="animation-delay:0.6s, 3.4s"/>
+          <circle class="constellation-star star-big" cx="145.5" cy="98.7" r="2.2" style="animation-delay:0.89s, 3.69s"/>
+          <circle class="constellation-star" cx="103.7" cy="137.4" r="2.2" style="animation-delay:1.19s, 3.99s"/>
+          <circle class="constellation-star" cx="93.7" cy="156.0" r="2.2" style="animation-delay:1.3s, 4.1s"/>
+          <circle class="constellation-star" cx="83.8" cy="137.4" r="2.2" style="animation-delay:1.41s, 4.21s"/>
+          <circle class="constellation-star star-big" cx="41.9" cy="98.7" r="2.2" style="animation-delay:1.71s, 4.51s"/>
+          <circle class="constellation-star" cx="14.0" cy="51.4" r="2.2" style="animation-delay:2.0s, 4.8s"/>
+          <circle class="constellation-star" cx="41.9" cy="14.0" r="2.2" style="animation-delay:2.25s, 5.05s"/>
+          <circle class="constellation-star" cx="83.8" cy="25.2" r="2.2" style="animation-delay:2.48s, 5.28s"/>
+        </svg>
+      </div>
+      <div class="eyebrow reveal" data-delay="1">Sizi Düğünümüze Davet Ediyoruz</div>
+      <div class="hero-date reveal" data-delay="2">12 . 06 . 2027</div>
+      <div class="hero-names reveal" data-delay="3">
+        Elif
+        <span class="hero-amp script">&amp;</span>
+        Kaan
+      </div>
+      <div class="hero-sub reveal" data-delay="4">Yıldızların Altında Bir Başlangıç</div>
+      <div class="scroll-cue reveal" data-delay="5">
+        <span></span>
+        <div class="scroll-cue-label">Kaydırın</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section dark intro">
+    <h2 class="intro-title script reveal">Sevgiyle</h2>
+    <p class="reveal" data-delay="1">Birbirimizi bulduğumuz güne, bugün birlikte yeni bir sayfa daha ekliyoruz. Hayatımızın en özel gününde, hayatlarımıza değer katan sizleri de yanımızda görmek isteriz.</p>
+    <p class="reveal" data-delay="2">Varlığınız, bu günü tamamlayacak en anlamlı hediye olacak.</p>
+  </section>
+
+  <div class="divider on-dark">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <section class="section deep">
+    <h2 class="count-title script reveal">Kutlamaya Kalan Süre</h2>
+    <div class="countdown reveal" data-delay="1" id="countdown">
+      <div class="count-box"><span class="count-num" id="cd-days">--</span><span class="count-label">Gün</span></div>
+      <div class="count-box"><span class="count-num" id="cd-hours">--</span><span class="count-label">Saat</span></div>
+      <div class="count-box"><span class="count-num" id="cd-min">--</span><span class="count-label">Dakika</span></div>
+      <div class="count-box"><span class="count-num" id="cd-sec">--</span><span class="count-label">Saniye</span></div>
+    </div>
+  </section>
+
+  <div class="divider on-dark">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- SCHEDULE -->
+  <section class="section dark">
+    <h2 class="schedule-title script reveal">Program Akışı</h2>
+    <div class="timeline">
+      <div class="tl-item reveal" data-delay="1">
+        <span class="tl-dot"></span>
+        <span class="tl-time">17:00</span>
+        <span class="tl-label">Nikah Töreni</span>
+      </div>
+      <div class="tl-item reveal" data-delay="2">
+        <span class="tl-dot"></span>
+        <span class="tl-time">18:00</span>
+        <span class="tl-label">Kokteyl</span>
+      </div>
+      <div class="tl-item reveal" data-delay="3">
+        <span class="tl-dot"></span>
+        <span class="tl-time">19:30</span>
+        <span class="tl-label">Akşam Yemeği</span>
+      </div>
+      <div class="tl-item reveal" data-delay="4">
+        <span class="tl-dot"></span>
+        <span class="tl-time">21:00</span>
+        <span class="tl-label">İlk Dans &amp; Eğlence</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider on-light">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- ANILARIMIZ / SLAYT GALERİSİ -->
+ 
+<section class="section light gallery-section">
+  <div class="eyebrow reveal">Yolumuz</div>
+  <h2 class="gallery-title script reveal" data-delay="1">Anılarımız</h2>
+  
+  <div class="gallery reveal" data-delay="2" id="gallery">
+    <div class="gallery-viewport">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide" style="background-image:url('images/1.jpg')">
+          <div class="gallery-caption">İlk Tanışma <span>2021</span></div>
+        </div>
+        <div class="gallery-slide" style="background-image:url('images/2.jpg')">
+          <div class="gallery-caption">Evlilik Teklifi <span>2025</span></div>
+        </div>
+        <div class="gallery-slide" style="background-image:url('images/3.jpg')">
+          <div class="gallery-caption">Nişan Günümüz <span>2026</span></div>
+        </div>
+        <div class="gallery-slide" style="background-image:url('images/4.jpg')">
+          <div class="gallery-caption">Yeni Başlangıç <span>2027</span></div>
+        </div>
+      </div>
+    </div>
+    <button class="gallery-arrow prev" id="galleryPrev" aria-label="Önceki">‹</button>
+    <button class="gallery-arrow next" id="galleryNext" aria-label="Sonraki">›</button>
+  </div>
+  
+  <div class="gallery-dots" id="galleryDots"></div>
+</section>
+  <!-- LOCATION -->
+  <section class="section light">
+    <div class="eyebrow reveal">Mekan</div>
+    <div class="venue-name reveal" data-delay="1">Villa Belvedere</div>
+    <div class="venue-addr reveal" data-delay="2">Bağlar Mahallesi, Zeytin Sokak No:14<br>Bodrum, Muğla</div>
+    <svg class="venue-art reveal" data-delay="3" viewBox="0 0 200 130" fill="none" stroke="#8c7a3f" stroke-width="1">
+      <rect x="20" y="50" width="160" height="60" />
+      <line x1="20" y1="50" x2="100" y2="15" />
+      <line x1="180" y1="50" x2="100" y2="15" />
+      <line x1="20" y1="50" x2="180" y2="50" />
+      <rect x="40" y="65" width="16" height="24" />
+      <rect x="70" y="65" width="16" height="24" />
+      <rect x="114" y="65" width="16" height="24" />
+      <rect x="144" y="65" width="16" height="24" />
+      <rect x="92" y="72" width="16" height="38" />
+      <circle cx="100" cy="30" r="2" />
+    </svg>
+    <a class="map-btn reveal" data-delay="4" href="https://maps.google.com/?q=Villa+Belvedere+Bodrum" target="_blank" rel="noopener">Haritada Gör</a>
+
+    </a>
+
+    <!-- TAKVİME EKLE BÖLÜMÜ -->
+    <div class="calendar-add-container reveal" data-delay="5">
+      <button class="calendar-btn" id="calendarBtn" type="button">
+        <svg class="calendar-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+          <line x1="12" y1="14" x2="12" y2="18"></line>
+          <line x1="10" y1="16" x2="14" y2="16"></line>
+        </svg>
+        <span>Takvime Ekle</span>
+      </button>
+
+      <!-- Açılır Menü (Google Calendar & Apple/Outlook iCal) -->
+      <div class="calendar-dropdown" id="calendarDropdown">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Elif+%26+Kaan+D%C3%BC%C4%9F%C3%BCn+Davetiyesi&dates=20270612T160000Z/20270612T230000Z&details=Elif+ve+Kaan%27%C4%B1n+d%C3%BC%C4%9F%C3%BCn+davetiyesine+davetlisiniz.&location=Villa+Belvedere%2C+Bodrum" target="_blank" rel="noopener noreferrer" class="calendar-option">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#1a73e8"/><path d="M17.5 12.5H12.5V7.5H11V14H17.5V12.5Z" fill="white"/></svg>
+          Google Takvim
+        </a>
+        <button type="button" class="calendar-option" id="downloadIcalBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Apple / Outlook (iCal)
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="divider on-dark">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- DRESS CODE -->
+  <section class="section dark">
+    <h2 class="dress-title script reveal">Kıyafet Beklentisi</h2>
+    <p class="dress-text reveal" data-delay="1">Gecemizin zarafetine eşlik edecek, aşağıdaki tonlara yakın şık bir kıyafet tercih etmenizden mutluluk duyarız.</p>
+    <div class="swatches reveal" data-delay="2">
+      <div class="swatch" style="background:#0a1a2e;"></div>
+      <div class="swatch" style="background:#c9a24b;"></div>
+      <div class="swatch" style="background:#2a2a2a;"></div>
+      <div class="swatch" style="background:#f8f3e9;"></div>
+    </div>
+  </section>
+
+  <div class="divider on-light">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- DETAILS -->
+  <section class="section light details">
+    <h2 class="details-title script reveal">Detaylar</h2>
+    <p class="reveal" data-delay="1">Sorularınız veya ek bilgi talepleriniz için organizasyon sorumlumuzla iletişime geçebilirsiniz.</p>
+    <div class="contact-name reveal" data-delay="2">Ayşe Yılmaz</div>
+    <div class="contact-phone reveal" data-delay="2">+90 555 123 45 67</div>
+    <p class="reveal" data-delay="3" style="margin-top:30px;">Varlığınız bizim için en büyük hediye. Yine de bize bu yeni başlangıcımızda katkıda bulunmak isterseniz, nakit hediye seçeneğini tercih edebilirsiniz.</p>
+  </section>
+
+  <div class="divider on-light">
+    <svg viewBox="0 0 220 36"><line x1="0" y1="18" x2="80" y2="18" stroke-width="1"/><circle cx="90" cy="18" r="2.5"/><circle cx="110" cy="10" r="1.6"/><circle cx="130" cy="18" r="2.5"/><line x1="140" y1="18" x2="220" y2="18" stroke-width="1"/></svg>
+  </div>
+
+  <!-- RSVP -->
+  <section class="section deep">
+    <h2 class="rsvp-title script reveal">Katılımınızı Bildirin</h2>
+    <p class="rsvp-text reveal" data-delay="1">Kutlamamızı en iyi şekilde planlayabilmemiz için lütfen katılım durumunuzu bize bildirin.</p>
+
+    <form class="rsvp-form reveal" data-delay="2" id="rsvpForm" action="https://formsubmit.co/ajax/gokcektuba2004@gmail.com" method="POST">
+      <!-- FormSubmit ayarları -->
+      <input type="hidden" name="_subject" value="Yeni RSVP — Elif & Kaan Düğünü">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="field">
+        <label for="rsvp-name">Ad Soyad</label>
+        <input type="text" id="rsvp-name" name="Ad Soyad" required placeholder="Adınız Soyadınız">
+      </div>
+
+      <div class="field">
+        <label>Katılım Durumu</label>
+        <div class="pill-group" id="attendGroup">
+          <input type="radio" id="attend-yes" name="Katılım" value="Katılıyorum" required>
+          <label for="attend-yes" class="pill">Katılıyorum</label>
+          <input type="radio" id="attend-no" name="Katılım" value="Katılamıyorum">
+          <label for="attend-no" class="pill">Katılamıyorum</label>
+        </div>
+      </div>
+
+      <div class="field" id="guestField">
+        <label for="rsvp-guests">Kaç Kişi Katılacaksınız?</label>
+        <input type="number" id="rsvp-guests" name="Kişi Sayısı" min="1" max="10" value="1">
+      </div>
+
+      <div class="field">
+        <label for="rsvp-note">Notunuz <span class="optional">(opsiyonel)</span></label>
+        <textarea id="rsvp-note" name="Not" rows="3" placeholder="Diyet kısıtlaması, kutlama mesajınız vb."></textarea>
+      </div>
+
+      <button type="submit" class="rsvp-btn" id="rsvpSubmit">Gönder</button>
+      <p class="rsvp-error" id="rsvpError"></p>
+    </form>
+
+    <div class="rsvp-success" id="rsvpSuccess">
+      <svg viewBox="0 0 60 60" class="rsvp-check">
+        <circle cx="30" cy="30" r="27"/>
+        <path d="M18 31 L26 39 L42 21"/>
+      </svg>
+      <p class="script rsvp-success-title">Teşekkürler!</p>
+      <p class="rsvp-success-text">Yanıtınız bize ulaştı. Sizi ağırlamak için sabırsızlanıyoruz.</p>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="section deep">
+    <h2 class="closing-title script reveal">Sizi Orada Görmeyi Umuyoruz!</h2>
+    <div class="closing-names reveal" data-delay="1">Elif &amp; Kaan</div>
+    <div class="closing-frame reveal" data-delay="2">
+      <div class="closing-frame-inner">
+        <span class="closing-mark">E &amp; K</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">Elif &amp; Kaan · 12 Haziran 2027</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
